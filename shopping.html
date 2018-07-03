@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/shopping.css">
+</head>
+<body>
+<table id="cartTable">
+    <thead>
+    <tr>
+        <th><lable><input type="checkbox" class="check_all check">&nbsp;全选</lable></th>
+        <th>商品</th>
+        <th>单价</th>
+        <th>数量</th>
+        <th>小计</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="checkbox"><input class="check_one check" type="checkbox"></td>
+        <td class="goods"><img src="image/1.jpg" alt=""><span>卡西欧相机</span></td>
+        <td class="price">2000.00</td>
+        <td class="count">
+            <span class="reduce"></span>
+            <input class="count_input" type="text" value="1">
+            <span class="add">+</span>
+        </td>
+        <td class="sub_total">2000.00</td>
+        <td class="operation"><span class="delete">删除</span></td>
+    </tr>
+    <tr>
+        <td class="checkbox"><input type="checkbox" class="check_one check"></td>
+        <td class="goods"><img src="image/2.jpg" alt=""><span>佳能相机</span></td>
+        <td class="price">1999.99</td>
+        <td class="count">
+            <span class="reduce"></span>
+            <input type="text" class="count_input" value="1">
+            <span class="add">+</span>
+        </td>
+        <td class="sub_total">1999.99</td>
+        <td class="operation"><span class="delete">删除</span></td>
+    </tr>
+    <tr>
+        <td class="checkbox"><input type="checkbox" class="check_one check"></td>
+        <td class="goods"><img src="image/3.jpg" alt=""><span>联想电脑</span></td>
+        <td class="price">3999.99</td>
+        <td class="count">
+            <span class="reduce"></span>
+            <input type="text" class="count_input" value="1">
+            <span class="add">+</span>
+        </td>
+        <td class="sub_total">3999.99</td>
+        <td class="operation"><span class="delete">删除</span></td>
+    </tr>
+    <tr>
+        <td class="checkbox"><input type="checkbox" class="check_one check"></td>
+        <td class="goods"><img src="image/4.jpg" alt=""><span>VR游戏机</span></td>
+        <td class="price">999.99</td>
+        <td class="count">
+            <span class="reduce"></span>
+            <input type="text" class="count_input" value="1">
+            <span class="add">+</span>
+        </td>
+        <td class="sub_total">999.99</td>
+        <td class="operation"><span class="delete">删除</span></td>
+    </tr>
+    <tr>
+        <td class="checkbox"><input type="checkbox" class="check_one check"></td>
+        <td class="goods"><img src="image/5.jpg" alt=""><span>华为平板电脑</span></td>
+        <td class="price">2599.99</td>
+        <td class="count">
+            <span class="reduce"></span>
+            <input type="text" class="count_input" value="1">
+            <span class="add">+</span>
+        </td>
+        <td class="sub_total">2599.99</td>
+        <td class="operation"><span class="delete">删除</span></td>
+    </tr>
+    </tbody>
+</table>
+<div class="foot" id="foot">
+    <label class="fl select_all"><input type="checkbox" class="check_all check">&nbsp;全选</label>
+    <a class="fl delete" id="deleteAll" href="javascript:;">删除</a>
+    <div class="fr closing">结算</div>
+    <div class="fr total">合计：￥<span id="priceTotal">0.00</span></div>
+    <div class="fr selected" id="selected">已选商品
+        <span id="selectedTotal">0</span>件
+        <span class="arrow up">︽</span>
+        <span class="arrow down">︾</span>
+    </div>
+    <div class="selected_view">
+        <div id="selectedViewList" class="clearfix">
+            <!--<div ><img src="image/6.jpg"><span>取消选择</span></div>-->
+        </div>
+        <span class="arrow">◆<span>◆</span></span>
+    </div>
+</div>
+<script src="js/shopping.js"></script>
+</body>
+</html>
